@@ -1,4 +1,4 @@
-__author__ = 'Oswald A Smith'
+__author__ = 'Georgia Pickersgill'
 __title__ = 'logindialog'
 __version__ = '1.0'
 __license__ = 'MIT'

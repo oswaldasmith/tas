@@ -1,4 +1,4 @@
-__author__ = 'Oswald A Smith'
+__author__ = 'Venessa Wallace'
 __title__ = 'mainwindow'
 __version__ = '1.0'
 __license__ = 'MIT'

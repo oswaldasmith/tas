@@ -1,8 +1,8 @@
-__author__ = 'Oswald A Smith'
+__author__ = 'Ackeem Lawrence'
 __title__ = 'Tournament'
 __version__ = '1.0'
 __license__ = 'MIT'
-__copyright__ = '2014 Oswald A Smith'
+
 
 class Tournament(object):
     """Implements the Tournament class.
