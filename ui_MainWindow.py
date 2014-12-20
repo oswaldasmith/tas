@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MainWindow.ui'
+#
+# Created: Fri Dec 12 05:44:05 2014
+#      by: PyQt5 UI code generator 5.3.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1160, 758)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1160, 25))
+        self.menubar.setObjectName("menubar")
+        self.menuTournament = QtWidgets.QMenu(self.menubar)
+        self.menuTournament.setObjectName("menuTournament")
+        self.menuMatch = QtWidgets.QMenu(self.menubar)
+        self.menuMatch.setObjectName("menuMatch")
+        self.menuTeams = QtWidgets.QMenu(self.menubar)
+        self.menuTeams.setObjectName("menuTeams")
+        self.menuPlayers = QtWidgets.QMenu(self.menubar)
+        self.menuPlayers.setObjectName("menuPlayers")
+        self.menuHelp = QtWidgets.QMenu(self.menubar)
+        self.menuHelp.setObjectName("menuHelp")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionNew_Tournament = QtWidgets.QAction(MainWindow)
+        self.actionNew_Tournament.setObjectName("actionNew_Tournament")
+        self.actionOpen_Tournament = QtWidgets.QAction(MainWindow)
+        self.actionOpen_Tournament.setObjectName("actionOpen_Tournament")
+        self.actionBlah = QtWidgets.QAction(MainWindow)
+        self.actionBlah.setObjectName("actionBlah")
+        self.actionManage_Matches = QtWidgets.QAction(MainWindow)
+        self.actionManage_Matches.setObjectName("actionManage_Matches")
+        self.actionManage_Matches_2 = QtWidgets.QAction(MainWindow)
+        self.actionManage_Matches_2.setObjectName("actionManage_Matches_2")
+        self.actionManage_Teams = QtWidgets.QAction(MainWindow)
+        self.actionManage_Teams.setObjectName("actionManage_Teams")
+        self.actionDocumentaion = QtWidgets.QAction(MainWindow)
+        self.actionDocumentaion.setObjectName("actionDocumentaion")
+        self.actionAbout_TAS = QtWidgets.QAction(MainWindow)
+        self.actionAbout_TAS.setObjectName("actionAbout_TAS")
+        self.actionAPI_Documentation = QtWidgets.QAction(MainWindow)
+        self.actionAPI_Documentation.setObjectName("actionAPI_Documentation")
+        self.actionManage_Players = QtWidgets.QAction(MainWindow)
+        self.actionManage_Players.setObjectName("actionManage_Players")
+        self.actionEdit_Tournament = QtWidgets.QAction(MainWindow)
+        self.actionEdit_Tournament.setObjectName("actionEdit_Tournament")
+        self.menuTournament.addAction(self.actionNew_Tournament)
+        self.menuTournament.addAction(self.actionEdit_Tournament)
+        self.menuTournament.addAction(self.actionOpen_Tournament)
+        self.menuMatch.addAction(self.actionManage_Matches_2)
+        self.menuTeams.addAction(self.actionManage_Teams)
+        self.menuPlayers.addAction(self.actionManage_Players)
+        self.menuHelp.addAction(self.actionDocumentaion)
+        self.menuHelp.addAction(self.actionAPI_Documentation)
+        self.menuHelp.addSeparator()
+        self.menuHelp.addAction(self.actionAbout_TAS)
+        self.menubar.addAction(self.menuTournament.menuAction())
+        self.menubar.addAction(self.menuMatch.menuAction())
+        self.menubar.addAction(self.menuTeams.menuAction())
+        self.menubar.addAction(self.menuPlayers.menuAction())
+        self.menubar.addAction(self.menuHelp.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Tournament Administration System 1.0"))
+        self.menuTournament.setTitle(_translate("MainWindow", "Tournament"))
+        self.menuMatch.setTitle(_translate("MainWindow", "Match"))
+        self.menuTeams.setTitle(_translate("MainWindow", "Teams"))
+        self.menuPlayers.setTitle(_translate("MainWindow", "Players"))
+        self.menuHelp.setTitle(_translate("MainWindow", "Help"))
+        self.actionNew_Tournament.setText(_translate("MainWindow", "New Tournament..."))
+        self.actionOpen_Tournament.setText(_translate("MainWindow", "Open Tournament..."))
+        self.actionBlah.setText(_translate("MainWindow", "Blah"))
+        self.actionManage_Matches.setText(_translate("MainWindow", "Manage Matches..."))
+        self.actionManage_Matches_2.setText(_translate("MainWindow", "Manage Matches..."))
+        self.actionManage_Teams.setText(_translate("MainWindow", "Manage Teams..."))
+        self.actionDocumentaion.setText(_translate("MainWindow", "User Documentation..."))
+        self.actionAbout_TAS.setText(_translate("MainWindow", "About TAS..."))
+        self.actionAPI_Documentation.setText(_translate("MainWindow", "API Documentation..."))
+        self.actionManage_Players.setText(_translate("MainWindow", "Manage Players..."))
+        self.actionEdit_Tournament.setText(_translate("MainWindow", "Edit Tournament..."))
+

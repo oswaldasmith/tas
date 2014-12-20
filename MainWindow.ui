@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1160</width>
+    <height>758</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tournament Administration System 1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1160</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTournament">
+    <property name="title">
+     <string>Tournament</string>
+    </property>
+    <addaction name="actionNew_Tournament"/>
+    <addaction name="actionEdit_Tournament"/>
+    <addaction name="actionOpen_Tournament"/>
+   </widget>
+   <widget class="QMenu" name="menuMatch">
+    <property name="title">
+     <string>Match</string>
+    </property>
+    <addaction name="actionManage_Matches_2"/>
+   </widget>
+   <widget class="QMenu" name="menuTeams">
+    <property name="title">
+     <string>Teams</string>
+    </property>
+    <addaction name="actionManage_Teams"/>
+   </widget>
+   <widget class="QMenu" name="menuPlayers">
+    <property name="title">
+     <string>Players</string>
+    </property>
+    <addaction name="actionManage_Players"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionDocumentaion"/>
+    <addaction name="actionAPI_Documentation"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_TAS"/>
+   </widget>
+   <addaction name="menuTournament"/>
+   <addaction name="menuMatch"/>
+   <addaction name="menuTeams"/>
+   <addaction name="menuPlayers"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew_Tournament">
+   <property name="text">
+    <string>New Tournament...</string>
+   </property>
+  </action>
+  <action name="actionOpen_Tournament">
+   <property name="text">
+    <string>Open Tournament...</string>
+   </property>
+  </action>
+  <action name="actionBlah">
+   <property name="text">
+    <string>Blah</string>
+   </property>
+  </action>
+  <action name="actionManage_Matches">
+   <property name="text">
+    <string>Manage Matches...</string>
+   </property>
+  </action>
+  <action name="actionManage_Matches_2">
+   <property name="text">
+    <string>Manage Matches...</string>
+   </property>
+  </action>
+  <action name="actionManage_Teams">
+   <property name="text">
+    <string>Manage Teams...</string>
+   </property>
+  </action>
+  <action name="actionDocumentaion">
+   <property name="text">
+    <string>User Documentation...</string>
+   </property>
+  </action>
+  <action name="actionAbout_TAS">
+   <property name="text">
+    <string>About TAS...</string>
+   </property>
+  </action>
+  <action name="actionAPI_Documentation">
+   <property name="text">
+    <string>API Documentation...</string>
+   </property>
+  </action>
+  <action name="actionManage_Players">
+   <property name="text">
+    <string>Manage Players...</string>
+   </property>
+  </action>
+  <action name="actionEdit_Tournament">
+   <property name="text">
+    <string>Edit Tournament...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

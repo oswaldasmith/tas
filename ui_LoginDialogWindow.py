@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'LoginDialogWindow.ui'
+#
+# Created: Sun Nov 30 00:21:01 2014
+#      by: PyQt5 UI code generator 5.3.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_LoginDialogWindow(object):
+    def setupUi(self, LoginDialogWindow):
+        LoginDialogWindow.setObjectName("LoginDialogWindow")
+        LoginDialogWindow.resize(400, 180)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(LoginDialogWindow.sizePolicy().hasHeightForWidth())
+        LoginDialogWindow.setSizePolicy(sizePolicy)
+        LoginDialogWindow.setMinimumSize(QtCore.QSize(400, 180))
+        LoginDialogWindow.setSizeGripEnabled(False)
+        self.buttonBox = QtWidgets.QDialogButtonBox(LoginDialogWindow)
+        self.buttonBox.setEnabled(True)
+        self.buttonBox.setGeometry(QtCore.QRect(150, 100, 193, 30))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.buttonBox.sizePolicy().hasHeightForWidth())
+        self.buttonBox.setSizePolicy(sizePolicy)
+        self.buttonBox.setMinimumSize(QtCore.QSize(0, 0))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.buttonBox.setFont(font)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setCenterButtons(True)
+        self.buttonBox.setObjectName("buttonBox")
+        self.formLayoutWidget = QtWidgets.QWidget(LoginDialogWindow)
+        self.formLayoutWidget.setGeometry(QtCore.QRect(60, 20, 281, 81))
+        self.formLayoutWidget.setObjectName("formLayoutWidget")
+        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
+        self.formLayout.setFieldGrowthPolicy(QtWidgets.QFormLayout.AllNonFixedFieldsGrow)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.formLayout.setVerticalSpacing(18)
+        self.formLayout.setObjectName("formLayout")
+        self.userNameLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.userNameLabel.setFont(font)
+        self.userNameLabel.setObjectName("userNameLabel")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.userNameLabel)
+        self.passwordLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.passwordLineEdit.setFont(font)
+        self.passwordLineEdit.setInputMethodHints(QtCore.Qt.ImhHiddenText|QtCore.Qt.ImhNoAutoUppercase|QtCore.Qt.ImhNoPredictiveText|QtCore.Qt.ImhSensitiveData)
+        self.passwordLineEdit.setInputMask("")
+        self.passwordLineEdit.setMaxLength(32767)
+        self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.passwordLineEdit.setObjectName("passwordLineEdit")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.passwordLineEdit)
+        self.userNameLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.userNameLineEdit.setEnabled(True)
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        font.setBold(True)
+        font.setWeight(75)
+        self.userNameLineEdit.setFont(font)
+        self.userNameLineEdit.setStyleSheet("")
+        self.userNameLineEdit.setAlignment(QtCore.Qt.AlignCenter)
+        self.userNameLineEdit.setReadOnly(True)
+        self.userNameLineEdit.setObjectName("userNameLineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.userNameLineEdit)
+        self.passwordLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.passwordLabel.setFont(font)
+        self.passwordLabel.setObjectName("passwordLabel")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.passwordLabel)
+
+        self.retranslateUi(LoginDialogWindow)
+        self.buttonBox.accepted.connect(LoginDialogWindow.accept)
+        self.buttonBox.rejected.connect(LoginDialogWindow.reject)
+        QtCore.QMetaObject.connectSlotsByName(LoginDialogWindow)
+
+    def retranslateUi(self, LoginDialogWindow):
+        _translate = QtCore.QCoreApplication.translate
+        LoginDialogWindow.setWindowTitle(_translate("LoginDialogWindow", "TAS Login"))
+        self.userNameLabel.setText(_translate("LoginDialogWindow", "User Name"))
+        self.passwordLineEdit.setToolTip(_translate("LoginDialogWindow", "Enter your password, then click \'OK\' to login."))
+        self.userNameLineEdit.setToolTip(_translate("LoginDialogWindow", "You cannot change the User name."))
+        self.userNameLineEdit.setPlaceholderText(_translate("LoginDialogWindow", "Admin"))
+        self.passwordLabel.setText(_translate("LoginDialogWindow", "Password"))
+
